@@ -32,7 +32,7 @@ Produce icons with extra effect like long shadow, flat shadow, box effect, circl
 
 #How to use it 
 -	Step1 :
-     Go to <a href="https://aminkodaganur.github.io/iconplus/">site</a> and build icon with effect however you want  
+     Go to <a href="https://vshawn.github.io/iconmaker/">site</a> and build icon with effect however you want  
 
 -	Step2: 
      Find “Get Code” or “Download as SVG” button on menu bar and click on any one option
