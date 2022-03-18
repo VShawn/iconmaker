@@ -27,17 +27,16 @@
     <div class="navbar-fixed">
         <nav>
             <div class="nav-wrapper">
-                <a href="#" class="brand-logo"> icon+ </a>
+                <a href="https://github.com/VShawn/iconplus" class="brand-logo"> icon maker </a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="javascript:void(0)" class="am-modal-trigger"
-                            data-am-target="#examples-modal">Samples</a></li>
-                    <!-- <li><a href="javascript:void(0)" class="waves-effect am-modal-trigger" data-am-target="#blog-modal">Feedback</a></li>
-                    <li style="background-color:#e74c3c;height: 45px;">
-                        <a href="javascript:void(0)" class="waves-effect am-modal-trigger" id="btn-get-code" data-am-target="#codeModal">
-                            <strong>Get Code</strong>
-                        </a>
-                    </li> -->
-                    <li style="background-color:#2980b9;height: 45px;">
+                    <li>
+                        <p>supported: </p>
+                    </li>
+                    <li><a href="https://fontawesome.com/" target="_blank" class="am-modal-trigger">font-awesome 6.1.0</a></li>
+                    <li><a href="https://materializecss.com/icons.html" target="_blank" class="am-modal-trigger">material icons</a></li>
+                    <li><a href="javascript:void(0)" class="am-modal-trigger" data-am-target="#examples-modal">Samples</a></li>
+                    <li>
+                        <!-- <a href="javascript:void(0)" class="waves-effect am-modal-trigger" id="preview"  this will show the preview page `downloadModal` then download -->
                         <a href="javascript:void(0)" class="waves-effect am-modal-trigger" id="downloadimage"
                             data-am-target="#downloadModal">
                             <strong>Download SVG</strong>
@@ -286,16 +285,6 @@
                         </div>
                     </div>
                 </section>
-                <!--<section class="btn-section">
-                    <div class="row">
-                        <div class="col s6">
-                            <a class="waves-effect waves-light btn red">Get Code</a>
-                        </div>
-                        <div class="col s6">
-                            <a class="waves-effect waves-light btn red">Get Image</a>
-                        </div>
-                    </div
-                </section>-->
             </div>
         </div>
         <div class="col s12 m9 l9 win-height">
@@ -332,13 +321,6 @@
             </div>
         </div>
     </div>
-    <!--<section id="how-to-use">
-        <div class="row">
-            <div class="container">
-                sdfdf
-            </div>
-        </div>
-    </section>-->
     <!--####################### Modals ##############################-->
     <div class="am-modal animated" id="examples-modal">
         <div class="am-header">
@@ -443,60 +425,6 @@
         </div>
     </div>
 
-    <div class="am-modal animated" id="blog-modal">
-        <div class="am-header">
-            <h3>Give Feedback or Say Thanks <span>If you got any issue please search or write in Github <a
-                        href="#">Issues</a></span> </h3>
-            <a href="javascript:void(0);" class="am-close">X</a>
-        </div>
-        <div class="am-body">
-            <div id="disqus_thread"></div>
-            <script>
-                /**
-                * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-                * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
-                */
-                /*
-                var disqus_config = function () {
-                this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
-                this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-                };
-                */
-                (function () {
-                    // DON'T EDIT BELOW THIS LINE
-                    var d = document, s = d.createElement('script');
-
-                    s.src = '//iconplus.disqus.com/embed.js';
-
-                    s.setAttribute('data-timestamp', +new Date());
-                    (d.head || d.body).appendChild(s);
-                })();
-            </script>
-            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript"
-                    rel="nofollow">comments powered by Disqus.</a></noscript>
-        </div>
-    </div>
-    <div class="am-modal animated" id="codeModal">
-        <div class="am-header">
-            <h3>Just Copy & Paste this code and you're done !! <span> If you got any issue please search or write in
-                    Github <a href="#">Issues</a></span> </h3>
-            <a href="javascript:void(0);" class="am-close">X</a>
-        </div>
-        <div class="am-body">
-            <div class="code_view_titel">HTML <span>paste this HTML code into your website</span></div>
-            <div class="code_view">
-                <span id="copyhtml">Copy</span>
-                <pre id="html-code"></pre>
-            </div>
-            <br>
-            <div class="code_view_titel">CSS <span>paste this CSS code into your website</span></div>
-            <div class="code_view">
-                <span id="copycss">Copy</span>
-                <pre id="css-code"></pre>
-            </div>
-        </div>
-
-    </div>
 
     <!-- <div class="am-modal animated" id="downloadModal">
         <div class="am-header">

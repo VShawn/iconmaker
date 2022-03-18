@@ -138,46 +138,6 @@ function changedText() {
     console.log(a);
     $(".text-shadow").css("text-shadow", a)
 }
-$("#btn-get-code").on("click", function () {
-    var a = $("#dynamic-text").val();
-    "" == a && (a = "fs");
-    var a = '<div class="box-shadow">\n\t<div class="text-shadow">' + a + "</div>\n</div>",
-        b = $("#box").width(),
-        d = $("#box").height(),
-        e = $("input[type=radio][name=bx-shape]:checked").val(),
-        c = $("#text-back-color").val();
-    "" == c && (c = "#1A84CC");
-    var f = $("#bx-back-color").val();
-    "" == f && (f = bodyBackColor);
-    var h = $("#bx-fade-flag").prop("checked"),
-        h = 1 == h ? 1 : 0,
-        k = $("#bx-shadow-length").val(),
-        g = $("#bx-opacity").val(),
-        m = $("#bx-rotation").val(),
-        f = genShadow(f, k, h, g, m),
-        f = f.replace(/ ,/g, " ,\n\t"),
-        b = ".box-shadow{\n\twidth:" + b + "px;\n\theight:" + d + "px;\n\toverflow : hidden;\n\tdisplay: table;\n\tmargin: 0 auto;\n\tborder-radius:" + e + "px;\n\tbackground-color : " + c + ";\n\tbox-shadow:" + f + ";\n}",
-        d = $("#font-color").val();
-    "" == d && (d = "#ffffff");
-    e = $("#fontsize").val();
-    c = $("input[type=radio][name=fontweight]:checked").val();
-    "undefined" == typeof c && (c = "bold");
-    var l = $("#outline").prop("checked");
-    1 == l ? (l = "2px", d = $("#box").css("background-color")) : l = "0px";
-    f = $("#text-back-color").val();
-    "" == f && (f = boxBackColor);
-    h = $("#text-fade-flag").prop("checked");
-    h = 1 == h ? 1 : 0;
-    k = $("#text-shadow-length").val();
-    g = $("#text-opacity").val();
-    m = $("#text-rotation").val();
-    f = genShadow(f, k, h, g, m);
-    f = f.replace(/ ,/g, " ,\n\t");
-    f = "\n\n.text-shadow{\n\tcolor: " + d + ";\n\tfont-size: " + e + "px;\n\tfont-weight: " + c + ";\n\t-webkit-text-stroke: " + l + " #FFFFFF;\n\t-moz-text-stroke: " + l + " #FFFFFF;\n\t-o-text-stroke: " + l + " #FFFFFF;\n\t-webkit-text-stroke: " + l + " #FFFFFF;\n\twidth: 100%;\n\theight: 100%;\n\ttext-align: center;\n\tletter-spacing : 5px;\n\tline-height: 1;\n\tdisplay: table-cell;\n\tvertical-align: middle;\n\ttext-shadow:" +
-        f + ";\n}";
-    $("#html-code").text(a);
-    $("#css-code").text(b + f)
-});
 $("#downloadimage").on("click", function () {
     var a = $("#dynamic-text").val();
     if (1 == -1 < a.indexOf("class=")) return alert("Sorry font awesome icons cant be exported right now. If you want to help me to implement this please fork me!!"), !1;
